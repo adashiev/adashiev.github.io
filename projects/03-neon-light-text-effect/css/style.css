@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&subset=cyrillic');
+
+html, body {
+    margin: 0;
+    padding: 0;
+	display: flex;
+	justify-content: center;
+    	align-items: center;
+    	height: 100vh;
+    background-image: url('../img/bg.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-family: 'Bad Script', cursive;
+}
+
+.neon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0 10px;
+    font-size: 6em;
+    color: #ffffff;
+    text-shadow: 0 0 20px #00b3ff;
+}
+
+.neon:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    color: #ffffff;
+    filter: blur(15px);
+}
+
+.neon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: #ffffff;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(40px);
+    
+}
+
+h1 span {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    -webkit-animation: animate 2s linear infinite;
+    -o-animation: animate 2s linear infinite;
+    animation: animate 2s linear infinite;
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.neon span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.neon span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+.neon span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.neon span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+.neon span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+.neon span:nth-child(8) {
+    animation-delay: 1.75s;
+}
+
+@keyframes animate {
+    0%,100% {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+
+    }
+    5%,95% {
+        color: #111111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}

@@ -1,0 +1,30 @@
+body {
+    background-image: url(../img/BG.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+div.blur {
+    transition-duration: 10s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../img.BG.jpg);
+    height: 50%;
+    width: 500px;
+    position: fixed;
+    left: -490px;
+    top: 25%;
+    overflow: hidden;
+    box-shadow:  -20px -20px 50px black, 20px 20px 5opx black
+}
+
+h1 {
+    color: wheat;
+    text-shadow:  2px 2px 5px black;
+    width: 90%;
+    left: 5%;
+    position: absolute;
+}
+
